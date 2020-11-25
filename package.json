@@ -1,0 +1,22 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "This project is done as a part of the MERN eCommerce From Scratch course by Brad Traversy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moha09-coder/proshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moha09-coder/proshop/issues"
+  },
+  "homepage": "https://github.com/moha09-coder/proshop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
