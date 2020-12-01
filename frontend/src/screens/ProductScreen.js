@@ -13,7 +13,7 @@ const ProductScreen = ({ history, match }) => {
   const dispatch = useDispatch()
 
   const productDetails = useSelector((state) => state.productDetails)
-  const { loading, error, product } = productDetails
+  const { productDetailsLoading, error, product } = productDetails
 
   useEffect(() => {
     dispatch(listProductDetails(match.params.id))
@@ -28,7 +28,7 @@ const ProductScreen = ({ history, match }) => {
       <Link className='btn btn-dark my-3' to='/'>
         Go Back
       </Link>
-      {loading ? (
+      {productDetailsLoading ? (
         <Loader />
       ) : error ? (
         <Message variant='danger'>{error}</Message>
