@@ -53,7 +53,7 @@ const HomeScreen = ({ match }) => {
           <Paginate
             pages={pages}
             page={page}
-            isAdmin={userInfo.isAdmin}
+            isAdmin={userInfo ? userInfo.isAdmin : false}
             keyword={keyword ? keyword : ''}
           />
         </>

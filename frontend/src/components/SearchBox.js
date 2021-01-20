@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { From, Button, Form } from 'react-bootstrap'
+import { Button, Form } from 'react-bootstrap'
 
 const SearchBox = ({ history }) => {
   const [keyword, setKeyword] = useState('')
